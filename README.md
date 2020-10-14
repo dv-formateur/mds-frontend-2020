@@ -6,7 +6,7 @@
 
 ## Déroulement
 
-### J1 : Le HTML
+### J1 : le HTML
 - Découverte du langage HTML 
 - Mise en oeuvre du HTML pour le projet portfolio
 
