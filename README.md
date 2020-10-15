@@ -10,6 +10,12 @@
 - Découverte du langage HTML 
 - Mise en oeuvre du HTML pour le projet portfolio
 
+- CSS de base
+  - Liste des propriétés : 
+    - https://www.cssdebutant.com/debuter-en-css-les-definitions-css.html
+    - http://goulvench.free.fr/vrac/CSS.html
+
+
 ### J2 : les bases du CSS et la mise en forme du texte
 - Découverte du langage CSS
 - Le modèle de boîte
