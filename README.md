@@ -12,17 +12,20 @@
   - Cheatsheet pdf (en français !) : https://olivier-dommange.ch/lib/files/HTML-Sheet.pdf
 - Mise en oeuvre du HTML pour le projet portfolio
 
-- CSS de base
-  - Liste des propriétés : 
-    - https://www.cssdebutant.com/debuter-en-css-les-definitions-css.html
-    - http://goulvench.free.fr/vrac/CSS.html
-    
-
-
-
 ### J2 : les bases du CSS et la mise en forme du texte
 - Découverte du langage CSS
 - Le modèle de boîte
 - Application sur le projet portfolio à travers la mise en forme de texte (uniquement)
+
+RESSOURCES : 
+- CSS de base
+  - Liste des propriétés : 
+    - https://www.cssdebutant.com/debuter-en-css-les-definitions-css.html
+    - http://goulvench.free.fr/vrac/CSS.html
+ - Magasin de polices :
+   - https://fonts.google.com/
+   - https://fonts.adobe.com/fonts
+   - https://www.fontsquirrel.com/
+
 
 ### J3 : l'articulation des blocs en CSS
