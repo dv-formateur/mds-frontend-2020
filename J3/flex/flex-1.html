@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  height: 100vh;
+  display: flex;
+  /*flex-direction: row;*/ /*row, row-reverse, column, column-reverse*/
+  flex-wrap: wrap; /*nowrap | wrap | wrap-reverse*/
+  /*justify-content: space-around;*/ /*center, flex-start, flex-end, space-around, space-between*/
+
+  align-items: center; /*center, flex-start, flex-end, stretch, baseline, space-around, space-between*/
+
+  align-content: space-between; /*center, flex-start, flex-end, stretch, baseline space-around, space-between*/ /*On multiple lines only*/
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 75px;
+}
+
+/*.item4 {
+  flex: 1 1 0; flex-grow, flex-shrink, flex-basis
+}*/
+/*Sur flex : https://developer.mozilla.org/fr/docs/Web/CSS/flex*/
+
+/*.item6 {
+  flex: 2 1 auto; flex-grow, flex-shrink, flex-basis
+}*/
+
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div class="item4">-4-</div>
+  <div>5</div>
+  <div class="item6">6</div>  
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>  
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>  
+</div>
+
+
+
+</body>
+</html>

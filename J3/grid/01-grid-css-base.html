@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+	    body {
+		  margin: 40px;
+		}
+
+		.wrapper {
+		  display: grid;
+		  grid-template-columns: 1fr 200px;
+		  grid-template-rows: 120px 135px 100px;
+		  grid-gap: 10px;
+		  background-color: #fff;
+		  color: #444;
+		}
+
+		.box {
+		  background-color: #444;
+		  color: #fff;
+		  border-radius: 5px;
+		  /*padding: 20px;*/
+		  font-size: 150%;
+		}
+
+		.header {
+	        grid-column-start: 1;
+	        grid-column-end: 3;
+	        grid-row-start: 1;
+	        grid-row-end: 2;
+	    }
+
+	    .nav {
+	        grid-column-start: 2;
+	        grid-column-end: 4;
+	        grid-row-start: 2;
+	        grid-row-end: 3;
+	    }
+
+	    .content {
+	    	grid-column-start: 1;
+	        grid-column-end: 2;
+	        grid-row-start: 2;
+	        grid-row-end: 3;
+	    }
+
+	    .footer {
+	        grid-column-start: 1;
+	        grid-column-end: 4;
+	        grid-row-start: 3;
+	        grid-row-end: 4;
+	    }
+    </style>
+  </head>
+  <body>
+  
+
+	<div class="wrapper">
+	  <div class="box header">A</div>
+	  <div class="box nav">B</div>
+	  <div class="box content">C</div>
+	  <div class="box footer">D</div>
+	  <!-- <div class="box e">E</div>
+	  <div class="box f">F</div> -->
+	</div>
+
+
+  </body>
+</html>
