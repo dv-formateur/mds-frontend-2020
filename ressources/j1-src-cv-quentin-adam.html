@@ -1,0 +1,1444 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" itemscope itemtype ="http://schema.org/Person" lang="fr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" itemscope itemtype ="http://schema.org/Person" lang="fr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8-fix" itemscope itemtype ="http://schema.org/Person" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" itemscope itemtype ="http://schema.org/Person" lang="fr"> <!--<![endif]-->
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/profile#">
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUOUVJbGwACUVVRDgk="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(16),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(17),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,n){i(w,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(19)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(19)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(19)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(19)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(19)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,v=l.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(w,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(16),s=t(17),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],16:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],17:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],18:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],19:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(17),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[e]];return d&&d.push([b,e,r,a]),a}}function p(t,n){y[t]=m(t).concat(n)}function h(t,n){var e=y[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",g[e]=n,n in u||(u[n]=[])})}var y={},g={},b={on:p,addEventListener:p,removeEventListener:h,emit:e,get:v,listeners:m,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(16),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=x.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(g,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+x.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(16),u=t("ee"),d=t(15),l=window,p=l.document,h="addEventListener",m="attachEvent",v=l.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:v,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(12),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(18)},{}]},{},["loader",2,10,4,3]);</script>
+                            <title>    Quentin ADAM - CV - Entrepreneur
+</title>
+                                        <meta name="description" content="CV de Quentin ADAM, entrepreneur web à la tête de Kan OP. Une société de développement d&#039;applicatif technique et humain pour le web." itemprop="description">
+                                                <link rel="shortcut icon" href="/favicon.ico">
+        
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/bundles/dyb/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/bundles/dyb/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/bundles/dyb/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/bundles/dyb/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="/bundles/dyb/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="/bundles/dyb/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+                    
+            <link rel="home" title="Accueil" href="http://www.doyoubuzz.com/fr">
+                <meta name="robots" content="index,follow">
+                <link rel="alternate" media="only screen and (min-device-width : 320px) and (max-device-width : 480px) " href="https://m.doyoubuzz.com/quentin-adam" >
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Quentin ADAM - Entrepreneur">
+    <meta property="og:url" content="https://www.doyoubuzz.com/quentin-adam" itemprop="url">            <meta property="og:image" content="https://www.doyoubuzz.com/var/users/1815/avatar/1813/avatar_cp_big.jpg?t=1554034523">
+        <meta property="og:description" content="CV de Quentin ADAM, entrepreneur web à la tête de Kan OP. Une société de développement d&#039;applicatif technique et humain pour le web.">
+    <meta property="og:site_name" content="Entrepreneur">
+            <meta property="og:profile:first_name" content="Quentin" itemprop="givenName">
+        <meta property="og:profile:last_name" content="ADAM" itemprop="familyName">
+        <meta property="og:profile:gender" content="male" itemprop="gender">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="fb:page_id" content="6239267965">
+    <meta name="twitter:card" content="summary">
+            <meta name="twitter:site" content="@doyoubuzz_fr">
+        <meta name="twitter:title" content="Entrepreneur">
+    <meta name="twitter:description" content="CV de Quentin ADAM, entrepreneur web à la tête de Kan OP. Une société de développement d&#039;applicatif technique et humain pour le web.">
+            <meta name="twitter:image" content="https://www.doyoubuzz.com/var/users/1815/avatar/1813/avatar_cp_big.jpg?t=1554034523">
+            <script>
+        var cvInfos = {
+            id: 1813,
+            url: "https://www.doyoubuzz.com/quentin-adam/cv",
+                        contactUrl: "https://www.doyoubuzz.com/quentin-adam/cv/contact",
+                        owner: {
+                                    firstname: 'Quentin',
+                    lastname: 'ADAM'
+                            }
+        };
+    </script>
+
+                                                <link href="/bundles/dyb/assets/css/app/Cv/cv.css?v=5.1.22" type="text/css" rel="stylesheet"/>
+                            <link href="/bundles/dyb/assets/css/app/Partials/common.css?v=5.1.22" type="text/css" rel="stylesheet"/>
+                    
+            <link rel="stylesheet" href="/bundles/dyb/assets/css/cv/themesStyles/minimal2/Web/theme.css" class="design-css">
+            <link rel="stylesheet" href="/var/cache/css/Themes/minimal2/Web/color-CC0606.css" class="design-css">
+    
+                    <script type="text/javascript">
+                                var _gaq = _gaq || [],
+    trackingParam = {
+        dyb: {
+            trackedUrl: null,
+            memberType: 'visitor'
+        },
+        stats: {
+            trackedUrl: null
+        }
+    };
+
+_gaq.push(
+        ['_setAccount', 'UA-4431557-1'],
+    ['_trackPageview'],
+
+        ['dyb._setAccount', 'UA-4431557-4'],
+    ['dyb._setDomainName', 'none'],
+    ['dyb._setAllowLinker', true]
+
+                            ,['stats._setAccount', 'UA-4431557-6']
+    );
+
+trackingParam.dyb.trackedUrl = '/visitor/cv/';
+    trackingParam.dyb.cvType = 'free';
+    trackingParam.stats.trackedUrl = '/cv/quentin-adam/3575550';
+                    
+    var customGa = false,
+        urlToTrack = window.location.pathname;
+
+            trackingParam.isHome = true;
+        urlToTrack += urlToTrack.match(/.*\/$/) ? "cv/" : "/cv/";
+    
+
+    
+                (function() {
+                    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                }());
+            </script>
+        
+                    
+                            <script>
+                                        var require = {
+                        baseUrl: "/bundles/dyb/assets/js/build",
+                                                paths: {
+                            jquery: [
+                                '//code.jquery.com/jquery-2.2.4.min',
+                                'libs/jquery/jquery.min'
+                            ],
+                            //CDN resources
+                            angular: [
+                                '//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min',
+                                'libs/angular/angular.min'
+                            ],
+                            ngResource: [
+                                '//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-resource.min',
+                                'libs/angular/angular-resource.min'
+                            ],
+
+                            ngCookies: [
+                                '//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-cookies.min',
+                                'libs/angular/angular-cookies.min'
+                            ],
+                            ngRoute: [
+                                '//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-route.min',
+                                'libs/angular/angular-route.min'
+                            ],
+                            ngAnimate: [
+                                '//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-animate.min',
+                                'libs/angular/angular-animate.min'
+                            ],
+                            ngSanitize: [
+                                '//ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular-sanitize.min',
+                                'libs/angular/angular-sanitize.min'
+                            ],
+                            spin: "libs/ladda/spin.min",
+                                                        timeagoI18n: '/fr_FR/timeago/assets/translations',
+                            select2I18n: '/bundles/dyb/assets/js/build/libs/select2/select2_locale_fr',
+                            angularI18n: 'libs/angular/i18n/angular-locale_fr-fr',
+                            beacon: "https://djtflbt20bdde.cloudfront.net/?.js"
+                        },
+                                                shim: {
+                            angular: {
+                                exports: "angular",
+                                deps: ['jquery']
+                            },
+                            ngAnimate: ['angular'],
+                            ngCookies: ['angular'],
+                            ngRoute: ['angular'],
+                            ngResource: ['angular'],
+                            ngSanitize: ['angular'],
+                            angularI18n: ['angular'],
+                            'libs/bootstrap/bootstrap.min': ['jquery'],
+                            'libs/star-rating.min': ['jquery'],
+                            timeagoI18n: ['libs/jquery/jquery.timeago.min'],
+                            select2I18n: ['libs/select2/select2.min']
+                        },
+                        waitSeconds: 30,
+                        urlArgs: "v=5.1.22"
+                    };
+                </script>
+            
+                            <script src="/bundles/dyb/assets/js/build/libs/requirejs.min.js"></script>
+                <script>
+                var culture = "fr_FR";
+                                    var locale = "fr";
+                                </script>
+                <script>
+                    require(["jquery", "layout/init" ], function ($, compile) {
+                        $(function () {
+                            compile($(document));
+                        });
+                    });
+
+                        window.pluginsCss = {
+        proofreading: "/bundles/dyb/assets/css/app/Cv/Proofreading/proofreading.css"
+    };
+                </script>
+            
+                                
+    </head>
+    <body >
+
+        		<div role="main" class="main" >
+                    <link href="/bundles/dyb/libs/outdatedbrowser/outdatedbrowser.min.css" type="text/css" rel="stylesheet"/>
+    <script src="/bundles/dyb/libs/outdatedbrowser/outdatedbrowser.min.js"></script>
+    <!-- ============= Outdated Browser ============= -->
+    <div id="outdated">
+        <h6>Votre navigateur est obsolète !</h6>
+        <p>Pour une expériencenet et une sécurité optimale, mettez à jour votre navigateur. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/fr">Mettre à jour maintenant</a></p>
+        <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Fermer">&times;</a></p>
+    </div>
+        <!-- plugin call -->
+        <script>
+        //event listener form DOM ready
+        function addLoadEvent(func) {
+            var oldonload = window.onload;
+            if (typeof window.onload != 'function') {
+                window.onload = func;
+            } else {
+                window.onload = function() {
+                    if (oldonload) {
+                        oldonload();
+                    }
+                    func();
+                }
+            }
+        }
+
+        var supportsPromise = typeof Promise !== "undefined" && Object.prototype.toString.call(Promise.resolve()) === '[object Promise]';
+        // <= safari 9
+        var supportRegexpFlag = true;
+        try {
+            new RegExp(/test/, 'y');
+        } catch (error) {
+            supportRegexpFlag = false;
+        }
+
+        //call plugin function after DOM ready
+        addLoadEvent(function(){
+         if(!supportsPromise || !supportRegexpFlag) {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: true,
+                languagePath: ''
+            })
+        }
+        });
+    </script>
+    
+			    	                    
+            
+    <div id="cv" data-cv>
+        <div class="headerIncentive">
+        <a class="headerIncentive__msg" href="/fr/">
+            CV créé sur <img src="/bundles/dyb/images/Common/doyoubuzz-logo-full-white.png" alt="DoYouBuzz">
+        </a>
+            </div>
+    <div id="cv-content">
+        <div id="fixed-col-1">
+            
+    <div
+        class="widget userInformation dyb-anim-fade"
+                    widget-element='{"id":"userInformation","title":"Infos"}'
+                
+            >
+        
+            
+<div
+        class="widget-element userInformation"
+    >
+        <div class="widget-content">
+                    <img class="avatar" src="/var/users/1815/avatar/1813/avatar_cp_big.jpg?t=1554034523" itemprop="image">
+                <h3 class="widget-title">Infos</h3>
+        <ul class="userinfo-list">
+                            <li class="userinfo-item" id="userinfo-age">
+                    30 ans
+                </li>
+                                                    <li class="userinfo-item" id="userinfo-city">
+                    <a itemprop="homeLocation" data-placement="top" data-html="true" data-dyb-tooltip="" data-dyb-tooltip-content="#user-info-tooltip">Nantes                        <span id="user-info-tooltip" class="hidden">
+                                                            Nantes (44000)                                                                                        <br>
+                                                                                        France                                                     </span>
+                    </a>
+                </li>
+                    </ul>
+    </div>
+                                    </div>
+
+    </div>
+
+            
+    <div
+        class="widget contacts dyb-anim-fade"
+                    widget-element='{"id":"contacts","title":"Contact"}'
+                
+            >
+            <h3 class="widget-title">
+        <span>Contact</span>
+    </h3>
+
+            
+<div
+        class="widget-element contacts"
+    >
+        <div class="widget-content">
+
+        
+        <div id="contacts-list" class="lenght3">
+                            <div id="email"
+                    class="contact-item"
+                    data-dyb-popover='
+                        <a id="email-adress" data-obf="114.118.102.111.117.106.111.47.98.101.98.110.65.120.98.121.123.100.102.47.112.115.104" data-obf-action="mailto:" data-obf-value></a>
+                        <hr>
+                        <a id="contact-form" href="https://www.doyoubuzz.com/quentin-adam/cv/contact">Formulaire de contact</a>
+                    '
+                    data-placement="bottom"
+                    data-container="#email"
+                    >
+                    <i class="dybicon-contacts"></i>                </div>
+                                                            <div id="mobile" 
+                        class="contact-item"
+                        data-placement="bottom"
+                        data-container="#mobile"
+                        data-dyb-popover='<a id="mobile-number" data-obf="44.52.52.33.41.49.42.33.55.33.55.51.33.49.58.33.53.49.33.49.56" data-obf-action="tel:" data-obf-value></a>'
+                        >
+                        <i class="icon-mobile-phone"></i>                    </div>
+                                                                    <div id="skype" 
+                    class="contact-item"
+                    data-placement="bottom"
+                    data-container="#skype"
+                    data-dyb-popover='<a id="skype-adress" href="skype:quentin_adam?call">quentin_adam</a>'
+                    >
+                    <i class="icon-skype"></i>                </div>
+                    </div>
+    </div>
+                                    </div>
+
+    </div>
+
+    <div
+        class="widget professionalPosition dyb-anim-fade"
+                    widget-element='{"id":"professionalPosition","title":"Situation professionnelle"}'
+                
+            >
+            <h3 class="widget-title">
+        <span>Situation professionnelle</span>
+    </h3>
+
+            
+<div
+        class="widget-element professionalPosition"
+    >
+        <div class="widget-content">
+        <div id="status">
+            <span id="status-title" class="CEO">Entrepreneur</span>
+        </div>
+        <div id="availability">
+            <span id="availability-title" class="WATCH">En simple veille</span>
+        </div>
+    </div>
+                                    </div>
+
+    </div>
+
+    <div
+        class="widget presentation dyb-anim-fade"
+                    widget-element='{"id":"presentation","title":"Présentation"}'
+                
+            >
+        	<h3 class="widget-title">Présentation</h3>
+
+            
+<div
+        class="widget-element presentation"
+    >
+    <div class="widget-content">
+    <p id="presentation-text">L&#039;énergie informatique payée à la consommation : <a href="http://clever-cloud.com" class="" target="_bank">clever-cloud.com</a><br />
+<br />
+video games, SI &amp; IT, web, startup, cloud...</p>
+</div>
+                                    </div>
+
+    </div>
+
+    <div
+        class="widget links dyb-anim-fade"
+                    widget-element='{"id":"links","title":"Mes liens"}'
+                
+            >
+            <h3 class="widget-title">
+        <span>Mes liens</span>
+    </h3>
+
+            
+<div
+        class="widget-element links"
+    >
+        <div class="widget-content">
+                <ul class="links-list lenght5">
+                            <li class="link-item-container">
+                    <a
+                        href="http://twitter.com/waxzce"
+                        target="_blank"
+                        data-dyb-tooltip="Twitter"                        class="link-item Twitter"
+                        data-type="link"
+                        data-id="2729"
+                        data-container="body"
+                    ></a>
+                </li>
+                            <li class="link-item-container">
+                    <a
+                        href="http://fr.linkedin.com/in/waxzce"
+                        target="_blank"
+                        data-dyb-tooltip="LinkedIn"                        class="link-item LinkedIn"
+                        data-type="link"
+                        data-id="9038"
+                        data-container="body"
+                    ></a>
+                </li>
+                            <li class="link-item-container">
+                    <a
+                        href="http://www.facebook.com/home.php#/profile.php?id=1510241748"
+                        target="_blank"
+                        data-dyb-tooltip="Facebook"                        class="link-item Facebook"
+                        data-type="link"
+                        data-id="1511"
+                        data-container="body"
+                    ></a>
+                </li>
+                            <li class="link-item-container">
+                    <a
+                        href="http://tungle.me/waxzce"
+                        target="_blank"
+                        data-dyb-tooltip="Tungle"                        class="link-item Autre"
+                        data-type="link"
+                        data-id="30439"
+                        data-container="body"
+                    ></a>
+                </li>
+                            <li class="link-item-container">
+                    <a
+                        href="http://www.waxzce.org"
+                        target="_blank"
+                        data-dyb-tooltip="Site Web"                        class="link-item Autre"
+                        data-type="link"
+                        data-id="123193"
+                        data-container="body"
+                    ></a>
+                </li>
+                    </ul>
+    </div>
+                                    </div>
+
+    </div>
+        </div>
+        <section id="content-wrapper">
+            <header>
+                                                                                        <h1 id="user-name">
+                        <a href="https://www.doyoubuzz.com/quentin-adam" itemprop="name">Quentin ADAM</a>
+                    </h1>
+                                                    
+    <div
+        class="widget title dyb-anim-fade"
+                    widget-element='{"id":"title","title":"title.title"}'
+                
+            >
+        
+            
+<div
+        class="widget-element title"
+    >
+        <h2 id="cv-title">
+        <a href="https://www.doyoubuzz.com/quentin-adam" itemprop="jobTitle">Entrepreneur</a>
+    </h2>
+    </div>
+
+    </div>
+
+                    <div class="clearfix"></div>
+                                    
+                    <div class="clearfix"></div>
+                                <div data-dyb-cv-compile="true" data-dyb-layout-compile="true" id="download-cv">
+    <a
+        id="download-cv-button"
+                    href="https://www.doyoubuzz.com/quentin-adam/cv/download"
+            target="_blank"
+            data-dyb-track-click='{ "action": "download", "label": "download-cv-%cvInfos.id%" }'
+            data-dyb-track-custom="1"
+                >Télécharger mon CV PDF</a>
+</div>
+                
+
+<nav id="cv-menu" class="clearfix">
+    <a class="cv-menu-item current" href="https://www.doyoubuzz.com/quentin-adam">Accueil</a>
+    <a
+        class="cv-menu-item "
+        href="https://www.doyoubuzz.com/quentin-adam/cv/jobs">
+            Expériences
+    </a>
+    <a
+        class="cv-menu-item "
+        href="https://www.doyoubuzz.com/quentin-adam/cv/trainings">
+            Formations
+    </a>
+    <a
+        class="cv-menu-item "
+        href="https://www.doyoubuzz.com/quentin-adam/cv/skills">
+            Compétences
+    </a>
+    <a
+        class="cv-menu-item "
+        href="https://www.doyoubuzz.com/quentin-adam/cv/portfolios">
+            Portfolios
+    </a>
+    <a
+        class="cv-menu-item "
+        href="https://www.doyoubuzz.com/quentin-adam/cv/hobbies">
+            Loisirs
+    </a>
+    <a
+        class="cv-menu-item "
+        href="https://www.doyoubuzz.com/quentin-adam/cv/blog">
+            Blog
+    </a>
+    <a
+        class="cv-menu-item "
+        href="https://www.doyoubuzz.com/quentin-adam/cv/contact">
+            Contact
+    </a>
+</nav>            </header>
+                                                <div id="col-1" class="column">
+	
+    <div
+        class="widget skills dyb-anim-fade"
+                    widget-portlet="skills"
+                
+            >
+                    <h3 class="widget-title">
+    	    <a href="https://www.doyoubuzz.com/quentin-adam/cv/skills">
+	        	            Compétences
+	        	    </a>
+    </h3>
+        
+                                    
+<div
+        widget-element='{"id": "skills-4900494", "title": &quot;Management&quot; }'
+        class="widget-element skills"
+    >
+        <div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/skills">Management</a></h4>
+</div>    	<div class="widget-element-content">
+	    <ul class="skills-list">
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Gestion d&#039;équipe</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Gestion de projet</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Management de projet en N+2</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Résolution de conflit</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Mise en place d&#039;une stratégie à long terme</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Conduite de réunion</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Capacités rédactionnelles</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Modélisation</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Gestion de crise</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Consulting</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Formation</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Intervention transversale</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Commerce</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Marketing</span>	        	</div>
+	        		        		        </li>
+	    	    </ul>
+	</div>
+    
+                                    </div>
+
+                            
+<div
+        widget-element='{"id": "skills-4507431", "title": &quot;Java Platform&quot; }'
+        class="widget-element skills"
+    >
+        <div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/skills">Java Platform</a></h4>
+</div>    	<div class="widget-element-content">
+	    <ul class="skills-list">
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Architecture et patern de développement (SOA, ROA, Entreprise bus)...</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Connaissance, développement et expérience de la norme java EE 5</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Connaissance, développement et expérience de la norme java EE 6</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Serveur d&#039;application : glassfish (2 et 3) (serveur OSGI)</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">IDE : Eclipse et Netbeans</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">JPA (hibernate, toplink, eclipseLink)</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">SOA &amp; webservice : REST (jersey), SOAP.</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Frameworks divers : GWT, struts, visual JSF...</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Connaissance de java SE</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Langage en JVM : jruby, Quercus(PHP), Rhino (javascript)</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Google app Engine java version</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">noSQL (mongodb, couchDB...)</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Scala</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Implémentation de Langage en java et DSL</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Applications hautes performances</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Clustering</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">JMS, AMQP (rabbitMQ)...</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">netty</span>	        	</div>
+	        		        		        </li>
+	    	    </ul>
+	</div>
+    
+                                    </div>
+
+                            
+<div
+        widget-element='{"id": "skills-4507432", "title": &quot;Techniques et gestion technique&quot; }'
+        class="widget-element skills"
+    >
+        <div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/skills">Techniques et gestion technique</a></h4>
+</div>    	<div class="widget-element-content">
+	    <ul class="skills-list">
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">GIT</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">mise en place de méthodes et pratiques</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">conduite de projets techniques</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Open source</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Veille</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Connaissance des API de nombreuses plateformes</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Méthodologies d&#039;implémentation d&#039;API</span>	        	</div>
+	        		        		        </li>
+	    	    </ul>
+	</div>
+    
+                                    </div>
+
+                            
+<div
+        widget-element='{"id": "skills-5049367", "title": &quot;D\u00e9veloppement web client&quot; }'
+        class="widget-element skills"
+    >
+        <div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/skills">Développement web client</a></h4>
+</div>    	<div class="widget-element-content">
+	    <ul class="skills-list">
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">XHTML : valide W3C</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">CSS 2 &amp; 3 (draft) + less et oocss</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Javascript riche et objet</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Connaissances toutes particulière sur Mootools</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Pattern web client : Modéle sémantique (XHTML), Vue (CSS), et logique métier (Javascript)</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">µFormat et RDFa -&gt; web sémantique</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Flash : Actionscript 2 et 3</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">XUL et plateforme Mozilla</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Performances client Web</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Vision d&#039;ensemble du web client évoluant et des navigateurs</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">HTML5</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Javascript Server Side</span>	        	</div>
+	        		        		        </li>
+	    	    </ul>
+	</div>
+    
+                                    </div>
+
+                            
+<div
+        widget-element='{"id": "skills-5049395", "title": &quot;Syst\u00e8me &amp; R\u00e9seaux&quot; }'
+        class="widget-element skills"
+    >
+        <div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/skills">Système &amp; Réseaux</a></h4>
+</div>    	<div class="widget-element-content">
+	    <ul class="skills-list">
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">CCNA 1 et 2</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Administration UNIX/Linux/BSD : debian, fedora, ubuntu, gentoo...</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Travail sous système linux et mac OS</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Administration Apache et pile LAMP</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Construction d&#039;architecture</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Virtualisation : KVM</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">BDD</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Routage linux (iptables)</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">DNS (bind) et DHCP</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">LDAP</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Architecture Réseaux</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">Infrastructure forte de tenu de charge : DNS, reverse proxy, cache...</span>	        	</div>
+	        		        		        </li>
+	    	    </ul>
+	</div>
+    
+                                    </div>
+
+                            
+<div
+        widget-element='{"id": "skills-5054273", "title": &quot;D\u00e9veloppement Mobile&quot; }'
+        class="widget-element skills"
+    >
+        <div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/skills">Développement Mobile</a></h4>
+</div>    	<div class="widget-element-content">
+	    <ul class="skills-list">
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">iphone/iapd</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">android</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">web mobile</span>	        	</div>
+	        		        		        </li>
+	    	        <li class="skill-item" >
+	        	<div class="skill-title ">
+	        		<span class="skill-title-txt">titanium</span>	        	</div>
+	        		        		        </li>
+	    	    </ul>
+	</div>
+    
+                                    </div>
+
+                        </div>
+
+    <div
+        class="widget interests dyb-anim-fade"
+                    widget-portlet="interests"
+                
+            >
+                    <h3 class="widget-title">
+    	    <a href="https://www.doyoubuzz.com/quentin-adam/cv/hobbies">
+	        	            Loisirs
+	        	    </a>
+    </h3>
+        
+                                    
+<div
+        widget-element='{"id": "interests-490490", "title": &quot;Musique&quot; }'
+        class="widget-element interests"
+    >
+        <div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/hobbies">Musique</a></h4>
+</div>    <div class="widget-element-content">
+    <ul class="interests-list">
+            <li class="interest-item">Chant Lyrique</li>
+            <li class="interest-item">Violon</li>
+        </ul>
+</div>    
+                                    </div>
+
+                            
+<div
+        widget-element='{"id": "interests-545886", "title": &quot;Arts&quot; }'
+        class="widget-element interests"
+    >
+        <div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/hobbies">Arts</a></h4>
+</div>    <div class="widget-element-content">
+    <ul class="interests-list">
+            <li class="interest-item">Théâtre</li>
+        </ul>
+</div>    
+                                    </div>
+
+                        </div>
+
+    <div
+        class="widget educations dyb-anim-fade"
+                    widget-portlet="educations"
+                
+            >
+                    <h3 class="widget-title">
+    	    <a href="https://www.doyoubuzz.com/quentin-adam/cv/trainings">
+	        	            Formations
+	        	    </a>
+    </h3>
+        
+                                    
+<div
+        widget-element='{"id": "educations-14969", "title": &quot;SUPINFO (Supinfo Pays de la Loire - Nantes)&quot; }'
+        class="widget-element educations"
+        itemscope itemtype ="http://schema.org/EducationEvent"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/EducationalOrganization">
+			<meta itemprop="name" content="Supinfo Pays de la Loire - Nantes" />
+		</span>
+    
+
+<div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/trainings/supinfo_supinfo-pays-de-la-loire-nantes_octobre-2006" itemprop="name">SUPINFO</a></h4>
+	<h5 class="widget-element-subtitle">
+			    	<span class="school-name">Supinfo Pays de la Loire - Nantes</span>
+	            <div class="date-range">
+            Depuis                          octobre 2006
+                            <meta itemprop="startDate" content="October 1, 2006 00:00" />
+                                </div>
+	</h5>
+</div>
+    	<div class="widget-element-content">
+		         
+         <p class="description" itemprop="description">La formation supinfo forme des ingénieurs en science de l&#039;informatique généraliste doublé de capacité managériales, commerciales et administratives.<br />
+<br />
+<a href="http://www.supinfo.com" class="" target="_bank">www.supinfo.com</a></p>
+	</div>
+    
+                                            </div>
+
+                        </div>
+
+</div>
+                                    <div id="col-2" class="column">
+	
+    <div
+        class="widget experiences dyb-anim-fade"
+                    widget-portlet="experiences"
+                
+            >
+                    <h3 class="widget-title">
+    	    <a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs">
+	        	            Expériences
+	        	    </a>
+    </h3>
+        
+                                    
+<div
+        widget-element='{"id": "experiences-273221", "title": &quot;CEO&quot; }'
+        class="widget-element experiences"
+        itemscope itemtype ="http://www.schema.org/Event"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="name" content="Clever Cloud" />
+		</span>
+            <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="url" content="" />
+		</span>
+    
+
+<div class="widget-element-header">
+            <img class="experience-logo" src="/var/f/ve/vr/vevrXMDqYBasQbWjrlThf6_uCARo4EFzOxeK3n1tm-NZG928Uv.jpg" itemprop="image">
+        <h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/clever-cloud_0" itemprop="name">CEO</a></h4>
+    <h5 class="widget-element-subtitle">
+                    <span class="company-name">Clever Cloud</span>
+                            <div class="date-range">
+                Depuis                          août 2010
+                                    <meta itemprop="startDate" content="August 1, 2010 00:00" />
+                                            </div>
+            </h5>
+</div>    	<div class="widget-element-content">
+			    <ul class="missions">
+	        	            <li class="mission">Conduite de l&#039;entreprise</li>
+	        	            <li class="mission">Financements</li>
+	        	            <li class="mission">Commercial</li>
+	        	            <li class="mission">Stratégie</li>
+	        	            <li class="mission">Evangélisation Cloud Computing</li>
+	        	    </ul>
+	</div>
+    
+            <div class="widget-element-footer">
+    	    <span class="experience-data contract-type">CDI</span>
+			    <span class="experience-data city" itemprop="location">
+			Nantes
+							(France)					</span>
+	                </div></div>
+
+                            
+<div
+        widget-element='{"id": "experiences-812458", "title": &quot;CEO&quot; }'
+        class="widget-element experiences"
+        itemscope itemtype ="http://www.schema.org/Event"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="name" content="Checkspear" />
+		</span>
+            <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="url" content="" />
+		</span>
+    
+
+<div class="widget-element-header">
+            <img class="experience-logo" src="/var/f/ve/vr/vevrDZQtmGKpw_eozgA3nlR9IYJ1jVUHbk-s7N8TB6WufSaMXO.jpg" itemprop="image">
+        <h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/checkspear_1" itemprop="name">CEO</a></h4>
+    <h5 class="widget-element-subtitle">
+                    <span class="company-name">Checkspear</span>
+                            <div class="date-range">
+                Depuis                          octobre 2011
+                                    <meta itemprop="startDate" content="October 1, 2011 00:00" />
+                                            </div>
+            </h5>
+</div>    	<div class="widget-element-content">
+			    <ul class="missions">
+	        	            <li class="mission">Checkspear is a mobile geolocation social game where you can hunt Monsters by checkin with Foursquare venues.</li>
+	        	            <li class="mission">Catch monsters in this giant and global discovery game.</li>
+	        	            <li class="mission">Train them fight after fight. Feed them to make them stronger with your foursquare points.</li>
+	        	            <li class="mission">Find and Engage other trainers in epic battles and become ladder leader !</li>
+	        	            <li class="mission">Enjoy mass players event in special venues in a last man standing battle.</li>
+	        	            <li class="mission">Merge the pokemon successful gameplay with social foursquare revolution.</li>
+	        	    </ul>
+	</div>
+    
+            <div class="widget-element-footer">
+    	    <span class="experience-data contract-type">CDI</span>
+			    <span class="experience-data city" itemprop="location">
+			Nantes
+					</span>
+	                </div></div>
+
+                            
+<div
+        widget-element='{"id": "experiences-812456", "title": &quot;CEO&quot; }'
+        class="widget-element experiences"
+        itemscope itemtype ="http://www.schema.org/Event"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="name" content="Unicorn4IT" />
+		</span>
+            <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="url" content="" />
+		</span>
+    
+
+<div class="widget-element-header">
+            <img class="experience-logo" src="/var/f/ve/vr/vevrykt20hqjKLZI8oBR47QwbJnpOfXcPeHD1mS6g9-rYlNCMV.jpg" itemprop="image">
+        <h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/unicorn4it_0" itemprop="name">CEO</a></h4>
+    <h5 class="widget-element-subtitle">
+                    <span class="company-name">Unicorn4IT</span>
+                            <div class="date-range">
+                Depuis                          janvier 2012
+                                    <meta itemprop="startDate" content="January 1, 2012 00:00" />
+                                            </div>
+            </h5>
+</div>    	<div class="widget-element-content">
+			    <ul class="missions">
+	        	            <li class="mission">This is brand for IT service inside Clever Cloud :-)</li>
+	        	    </ul>
+	</div>
+    
+            <div class="widget-element-footer">
+    	    <span class="experience-data contract-type">CDI</span>
+			    <span class="experience-data city" itemprop="location">
+			Nantes
+					</span>
+	                </div></div>
+
+                            
+<div
+        widget-element='{"id": "experiences-812460", "title": &quot;CoFounder&quot; }'
+        class="widget-element experiences"
+        itemscope itemtype ="http://www.schema.org/Event"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="name" content="Atlangames" />
+		</span>
+            <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="url" content="http://www.atlangames.com/" />
+		</span>
+    
+
+<div class="widget-element-header">
+            <img class="experience-logo" src="/var/f/ve/vr/vevrW3oEPRjkNGegIb5LxA0_z1-Sf6HJVKBpU8yiMOnwTm2rvl.jpg" itemprop="image">
+        <h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/atlangames_0" itemprop="name">CoFounder</a></h4>
+    <h5 class="widget-element-subtitle">
+                    <span class="company-name">Atlangames</span>
+                            <div class="date-range">
+                Depuis                          mai 2010
+                                    <meta itemprop="startDate" content="May 1, 2010 00:00" />
+                                            </div>
+            </h5>
+</div>    	<div class="widget-element-content">
+			    <ul class="missions">
+	        	            <li class="mission">Cluster of Nantes area for video games : our baseline is &quot;mobile &amp; online | serious &amp; social&quot;</li>
+	        	    </ul>
+	</div>
+    
+            <div class="widget-element-footer">
+    	    <span class="experience-data contract-type">Bénévolat</span>
+			    <span class="experience-data city" itemprop="location">
+			Nantes
+					</span>
+	                        <a class="widget-element-readmore" href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/atlangames_0">En savoir +</a>
+            </div></div>
+
+                            
+<div
+        widget-element='{"id": "experiences-812457", "title": &quot;Vacataire&quot; }'
+        class="widget-element experiences"
+        itemscope itemtype ="http://www.schema.org/Event"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="name" content="Université de Nantes" />
+		</span>
+            <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="url" content="" />
+		</span>
+    
+
+<div class="widget-element-header">
+            <img class="experience-logo" src="/var/f/ve/vr/vevryFVNqnWABI1JbpeUhDsl4ut-30KZfHjkv5YxE8rm7a_9LX.jpg" itemprop="image">
+        <h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/universite-de-nantes_0" itemprop="name">Vacataire</a></h4>
+    <h5 class="widget-element-subtitle">
+                    <span class="company-name">Université de Nantes</span>
+                            <div class="date-range">
+                Depuis                          janvier 2012
+                                    <meta itemprop="startDate" content="January 1, 2012 00:00" />
+                                            </div>
+            </h5>
+</div>    	<div class="widget-element-content">
+			    <ul class="missions">
+	        	            <li class="mission">Cours de Base de donnés et système d&#039;information à Infocom</li>
+	        	    </ul>
+	</div>
+    
+            <div class="widget-element-footer">
+    	    <span class="experience-data contract-type">Vacataire</span>
+			    <span class="experience-data city" itemprop="location">
+			Nantes
+					</span>
+	                </div></div>
+
+                            
+<div
+        widget-element='{"id": "experiences-29242", "title": &quot;Chef d&#039;entreprise&quot; }'
+        class="widget-element experiences"
+        itemscope itemtype ="http://www.schema.org/Event"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="name" content="Kan OP" />
+		</span>
+            <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="url" content="www.kan-op.com" />
+		</span>
+    
+
+<div class="widget-element-header">
+            <img class="experience-logo" src="/var/f/ve/vr/vevrXxvCbNgp850aq27u9oHJFh1W-ELrPzmMf3BOAsw4eGyc_K.jpg" itemprop="image">
+        <h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/kan-op_0" itemprop="name">Chef d&#039;entreprise</a></h4>
+    <h5 class="widget-element-subtitle">
+                    <span class="company-name">Kan OP</span>
+                            <div class="date-range">
+                Novembre 2007
+             à                         juin 2010
+                                    <meta itemprop="startDate" content="November 1, 2007 00:00" />
+                                                    <meta itemprop="endDate" content="June 1, 2010 00:00" />
+                            </div>
+            </h5>
+</div>    	<div class="widget-element-content">
+			    <ul class="missions">
+	        	            <li class="mission">Direction générale de l&#039;entreprise</li>
+	        	            <li class="mission">Direction des opérations commerciales</li>
+	        	            <li class="mission">Direction technique</li>
+	        	            <li class="mission">Gestion et management de groupe</li>
+	        	            <li class="mission">Définition de la technologie Kan OP</li>
+	        	            <li class="mission">Grandes décisions stratégiques</li>
+	        	    </ul>
+	</div>
+    
+            <div class="widget-element-footer">
+    		    <span class="experience-data city" itemprop="location">
+			Nantes
+					</span>
+	                        <a class="widget-element-readmore" href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/kan-op_0">En savoir +</a>
+            </div></div>
+
+                            
+<div
+        widget-element='{"id": "experiences-29241", "title": &quot;D\u00e9veloppement Client l\u00e9ger XUL - Projet Malakoff 2.0&quot; }'
+        class="widget-element experiences"
+        itemscope itemtype ="http://www.schema.org/Event"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="name" content="Carra Consulting" />
+		</span>
+            <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="url" content="www.carra.fr" />
+		</span>
+    
+
+<div class="widget-element-header">
+            <img class="experience-logo" src="/var/f/ve/vr/vevr7UfVYsCQ2OANbBjT6WXlv4a90SmIxyt1icH_EoR3LFkh-g.jpg" itemprop="image">
+        <h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/carra-consulting_0" itemprop="name">Développement Client léger XUL - Projet Malakoff 2.0</a></h4>
+    <h5 class="widget-element-subtitle">
+                    <span class="company-name">Carra Consulting</span>
+                            <div class="date-range">
+                Février 2008
+             à                         juin 2008
+                                    <meta itemprop="startDate" content="February 1, 2008 00:00" />
+                                                    <meta itemprop="endDate" content="June 1, 2008 00:00" />
+                            </div>
+            </h5>
+</div>    	<div class="widget-element-content">
+			    <ul class="missions">
+	        	            <li class="mission">Contexte de l&#039;application portable (sur clé usb)</li>
+	        	            <li class="mission">Développement sur la plateforme Mozillla (xulrunner)</li>
+	        	            <li class="mission">Projet intégrant un large consortium d&#039;entreprise et un travail en groupe</li>
+	        	    </ul>
+	</div>
+    
+            <div class="widget-element-footer">
+    	    <span class="experience-data contract-type">Stage</span>
+			    <span class="experience-data city" itemprop="location">
+			Nantes
+					</span>
+	                        <a class="widget-element-readmore" href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/carra-consulting_0">En savoir +</a>
+            </div></div>
+
+                            
+<div
+        widget-element='{"id": "experiences-29239", "title": &quot;Stagiaire chez Carra Consulting&quot; }'
+        class="widget-element experiences"
+        itemscope itemtype ="http://www.schema.org/Event"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="name" content="Carra Consulting" />
+		</span>
+            <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="url" content="http://www.carra.fr/" />
+		</span>
+    
+
+<div class="widget-element-header">
+            <img class="experience-logo" src="/var/f/ve/vr/vevrnkrqjxOfALuQ91l5DcIH3PgWt6bMvSX0NoKei7V8JBs-m_.jpg" itemprop="image">
+        <h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/carra-consulting" itemprop="name">Stagiaire chez Carra Consulting</a></h4>
+    <h5 class="widget-element-subtitle">
+                    <span class="company-name">Carra Consulting</span>
+                            <div class="date-range">
+                Juillet 2007
+             à                         octobre 2007
+                                    <meta itemprop="startDate" content="July 1, 2007 00:00" />
+                                                    <meta itemprop="endDate" content="October 1, 2007 00:00" />
+                            </div>
+            </h5>
+</div>    	<div class="widget-element-content">
+			    <ul class="missions">
+	        	            <li class="mission">Mise en conformité W3C (web client) d&#039;un projet portail java (struts, jreport, jguard...)</li>
+	        	            <li class="mission">R&amp;D : génération de code métier à partir d&#039;UML (Acceleo)</li>
+	        	            <li class="mission">R&amp;D : développement application interne GWT</li>
+	        	            <li class="mission">Intégration intranet Drupal</li>
+	        	    </ul>
+	</div>
+    
+            <div class="widget-element-footer">
+    	    <span class="experience-data contract-type">Stage</span>
+			    <span class="experience-data city" itemprop="location">
+			Nantes
+					</span>
+	                        <a class="widget-element-readmore" href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/carra-consulting">En savoir +</a>
+            </div></div>
+
+                            
+<div
+        widget-element='{"id": "experiences-812462", "title": &quot;\u00e9tudiant&quot; }'
+        class="widget-element experiences"
+        itemscope itemtype ="http://www.schema.org/Event"
+>
+        
+	        <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="name" content="SUPINFO" />
+		</span>
+            <span itemscope itemtype="http://www.schema.org/Organization">
+			<meta itemprop="url" content="" />
+		</span>
+    
+
+<div class="widget-element-header">
+        <h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/jobs/supinfo" itemprop="name">étudiant</a></h4>
+    <h5 class="widget-element-subtitle">
+                    <span class="company-name">SUPINFO</span>
+                            <div class="date-range">
+                Janvier 2006
+             à                         janvier 2010
+                                    <meta itemprop="startDate" content="January 1, 2006 00:00" />
+                                                    <meta itemprop="endDate" content="January 29, 2010 00:00" />
+                            </div>
+            </h5>
+</div>    	<div class="widget-element-content">
+			    <ul class="missions">
+	        	            <li class="mission">A very part time activity</li>
+	        	    </ul>
+	</div>
+    
+            <div class="widget-element-footer">
+    	                </div></div>
+
+                        </div>
+
+    <div
+        class="widget portfolios dyb-anim-fade"
+                    widget-portlet="portfolios"
+                data-dyb-cv-compile="true"
+            >
+                    <h3 class="widget-title">
+    	    <a href="https://www.doyoubuzz.com/quentin-adam/cv/portfolios">
+	        	            Portfolios
+	        	    </a>
+    </h3>
+        
+                                    
+<div
+        widget-element='{"id": "portfolios-4746", "title": &quot;:-)&quot; }'
+        class="widget-element portfolios"
+        itemscope itemtype ="http://www.schema.org/CreativeWork"
+>
+        <div data-portfolio-slug="image_-" data-portfolio-type="image">
+                    <meta itemprop="image" content='/var/f/tV/_Y/tV_Ynm9BaLz4fJuIcZ0sbpWKUrHkSig2vy-DR6Qj57PxweAoMG.jpg'>
+        
+        <div class="widget-element-header">
+	<h4 class="widget-element-title"><a href="https://www.doyoubuzz.com/quentin-adam/cv/portfolios/image_-" itemprop="name">:-)</a></h4>
+</div>        <div class="widget-element-content ">
+                                        <a class="mfp" data-mfp-type="image" data-desc="" href="/var/f/tV/_Y/tV_Ynm9BaLz4fJuIcZ0sbpWKUrHkSig2vy-DR6Qj57PxweAoMG.jpg">
+                <img class="portfolioImg" src="/var/f/tV/_Y/tV_Ynm9BaLz4fJuIcZ0sbpWKUrHkSig2vy-DR6Qj57PxweAoMG.jpg">
+            </a>
+    </div>
+            </div>
+        <div data-portfolio-slug="image_-" data-portfolio-type="image">
+        <div class="widget-element-footer">
+    
+                </div>    </div>
+</div>
+
+                        </div>
+
+</div>
+                                    </section>
+    </div>
+    <div id="cv-footer">
+            
+    
+    <div id="dyb-link">
+                <a href="/fr/p/modeles-cv">
+            Voir tous les templates de CV sur <img src="/bundles/dyb/images/Cv/doyoubuzz.png" alt="DoYouBuzz">
+        </a>
+    </div>
+    <div id="share-cv">
+	<span id="share-title">Partager ce CV sur</span>
+	<div id="share-items">
+			        <a class="share-item twitter" target="_blank" href="https://www.doyoubuzz.com/quentin-adam/cv/share/twitter"><i class="icon-twitter"></i></a>
+	    	        <a class="share-item facebook" target="_blank" href="https://www.doyoubuzz.com/quentin-adam/cv/share/facebook"><i class="icon-facebook"></i></a>
+	    	        <a class="share-item linkedin" target="_blank" href="https://www.doyoubuzz.com/quentin-adam/cv/share/linkedin"><i class="icon-linkedin"></i></a>
+	    	        <a class="share-item viadeo" target="_blank" href="https://www.doyoubuzz.com/quentin-adam/cv/share/viadeo"><i class="dybicon-viadeo"></i></a>
+	    	</div>
+</div>
+    </div>
+</div>
+
+    <div data-dyb-suggestion-panel></div>
+		</div>
+        
+            <script>
+        require(["cv/cv"], function (cvCompiler) {
+            cvCompiler.compile($(document));
+        });
+    </script>
+
+        <script>
+            if (window.trackingParam) {
+                var _gaq = _gaq || [],
+                    i;
+                if (trackingParam.dyb.memberType !== 'visitor') {
+                                        _gaq.push(['dyb._deleteCustomVar', 3]);
+                }
+                _gaq.push(['dyb._setCustomVar', 3, "Member_type", trackingParam.dyb.memberType, 3]);
+                if (trackingParam.dyb.professionalStatus) {
+                    _gaq.push(['dyb._setCustomVar', 5, "Professionnal_status", trackingParam.dyb.professionalStatus, 2]);
+                }
+                if (trackingParam.dyb.cvType) {
+                    _gaq.push(['dyb._setCustomVar', 1, "Cv_type", trackingParam.dyb.cvType, 3]);
+                }
+                if (trackingParam.dyb.locale) {
+                    _gaq.push(['dyb._setCustomVar', 2, "Locale", trackingParam.dyb.locale, 3]);
+                }
+                _gaq.push(['dyb._trackPageview', trackingParam.dyb.trackedUrl]);
+                if (!trackingParam.stats.blockStatsTracking && trackingParam.stats.trackedUrl) {
+                    _gaq.push(['stats._trackPageview', trackingParam.stats.trackedUrl]);
+                }
+            }
+        </script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"77627f5098","applicationID":"3254398","transactionName":"Y1NQNUAFVhEEVRJbCloZcRRBEFcPSlUQ","queueTime":0,"applicationTime":243,"atts":"TxRTQwgfRR8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

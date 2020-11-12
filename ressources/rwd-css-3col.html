@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS 3 colonnes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>CESI</h2>
+  <h3>Exercice CSS 3 colonnes</h3>
+  <p>Cette page est responsive. Quand on réduit la largeur, ou bien sur les petits écrans (largeur inférieure à 600 px), les 3 colonnes ne sont plus les unes à côté des autres, mais les unes en-dessous des autres. </p>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">Colonne 1</div>
+  <div class="column" style="background-color:#bbb;">Colonne 2</div>
+  <div class="column" style="background-color:#ccc;">Colonne 3</div>
+</div>
+
+<div class="footer">
+  <p>Pied de page</p>
+</div>
+
+</body>
+</html>
