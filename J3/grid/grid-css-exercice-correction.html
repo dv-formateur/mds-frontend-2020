@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+	    body {
+		  margin: 0;
+		  padding: 0;
+		  font-size: 100%;
+		}
+
+		.wrapper {
+		  display: grid;
+		  grid-template-columns: repeat(5, 20vw);
+		  grid-template-rows: repeat(5, 20vh);
+		}
+
+		.box {
+		  border-radius: 0.5rem;
+		  font-size: 1.5rem;
+		  border: solid black;
+		  /*Etape 2*/
+		  /*display: flex;
+		  justify-content: center;
+  		  align-items: center;*/
+
+		}
+
+		.a {
+	        grid-column : 1 / 2;
+	        grid-row: 1 / 2;
+	    }
+
+	    .b {
+	        grid-column : 5 / 6;
+	        grid-row: 5 / 6;
+	    }
+
+	    .c {
+	    	grid-column : 1 / -1;
+	        grid-row: 3 / 4;
+	    }
+
+    </style>
+  </head>
+  <body>
+  
+
+	<div class="wrapper">
+	  <div class="box a">A</div>
+	  <div class="box b">B</div>
+	  <div class="box c">C</div>
+	</div>
+
+
+  </body>
+</html>
